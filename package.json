@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/senepote/AustinMusicScene/issues"
   },
-  "homepage": "https://github.com/senepote/AustinMusicScene#readme"
+  "homepage": "https://github.com/senepote/AustinMusicScene#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9"
+  }
 }
