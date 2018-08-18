@@ -2,7 +2,7 @@ class Footer extends React.Component {
   render(){
     return (
       <footer>
-        <link>About</link>
+        <h3>About</h3>
       </footer>
     )
   }

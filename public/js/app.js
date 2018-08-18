@@ -2,9 +2,7 @@ class App extends React.Component {
   render(){
     return (
       <div className='main'>
-        <Header />
-          <div className='content'></div>
-        <Footer />
+        <Music />
       </div>
     )
   }
@@ -12,5 +10,5 @@ class App extends React.Component {
 
 ReactDOM.render(
   <App />,
-  document.querySelector('.container')
+  document.querySelector("main")
 )
