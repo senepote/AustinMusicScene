@@ -19,6 +19,7 @@
   "homepage": "https://github.com/senepote/AustinMusicScene#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "method-override": "^3.0.0",
     "mongoose": "^5.2.9"
   }
 }

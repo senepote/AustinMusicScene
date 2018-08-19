@@ -11,6 +11,11 @@ router.get('/json', (req,res) =>{
 })
 
 //INDEX
+router.get('/', (req,res)=>{
+  Music.find({}, (err, allMusic)=>{
+    res.send(allMusic)
+  })
+})
 
 //SHOW
 
