@@ -16,6 +16,24 @@ app.use(express.static('public'));
 app.use(express.json());
 
 //controllers
+const musicController = require('./controllers/rockstars.js');
+app.use('/music', musicController);
+const userController = require('./controllers/users.js');
+app.use('/users', userController);
+const sessionsController = require('./controllers/sessions.js');
+app.use('/sessions', sessionsController);
+
+app.get('/',(req,res)=>{
+  res.redirect('/music')
+})
+
+app.get('/app', (req,res)=>{
+  if(req.session.currentUser){
+    res.send('the main');
+  } else {
+    res.redirect('/sessions/new')
+  }
+})
 
 app.listen(PORT, ()=>{
   console.log('listening...');
