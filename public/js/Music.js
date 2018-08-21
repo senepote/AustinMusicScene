@@ -1,8 +1,25 @@
 class Music extends React.Component {
   render(){
     return (
-      <div>
+      <div className="the-core">
         <Header />
+
+        <nav>
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">More Info</a>
+          </li>
+          <li>
+            <a href="#">ACL</a>
+          </li>
+          <li>
+            <a href="#">SXSW</a>
+          </li>
+        </ul>
+        </nav>
 
         <div className='info'>
           <p>words about music and stuff and things and and and and and and</p>

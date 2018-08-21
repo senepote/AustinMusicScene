@@ -12,6 +12,12 @@ body{
   justify-content: center;
 }
 
+div.the-core {
+  display: flex;
+  max-width: 1900px;
+  justify-content: right;
+}
+
 header {
   width: 100%;
   height: 200px;
@@ -46,6 +52,7 @@ h1.headerTitle {
   /* font-family: 'Shadows Into Light', cursive; */
   padding-bottom: 15px;
   font-size: 48px;
+  padding-left: 30px;
 }
  h3.headerTitle {
    display: inline-block;
@@ -72,6 +79,14 @@ h1.headerTitle {
   font-size: 30px;
 
  }
+
+nav {
+  text-align: right;
+  background-color: black;
+  float: right;
+
+}
+
 div {
   /* display: flex; */
   align-items: center;
@@ -121,6 +136,7 @@ div.eventsvenues {
   margin: 10px;
   width: 200px;
   height: 500px;
+  border: 1px solid blue;
 }
 
 ul {
