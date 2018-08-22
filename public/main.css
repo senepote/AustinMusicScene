@@ -26,6 +26,12 @@ header {
   top: 0;
   padding: 0;
   left: 0;
+  display: inline-block;
+}
+
+div.nav {
+
+  justify-content: center;
 }
 
 h1.headerTitle {
@@ -77,18 +83,15 @@ h1.headerTitle {
   font-family: 'Shadows Into Light', cursive;
   padding-bottom: 15px;
   font-size: 30px;
-
- }
-div.nav {
-  float:left;
 }
 
-nav {
+
+/* nav {
   text-align: right;
   background-color: black;
   float: left;
 
-}
+} */
 
 div {
   /* display: flex; */
@@ -180,13 +183,16 @@ button.venuebutton:focus {
   width: 200px;
   height: 500px;
 }
-
-ul {
+a.bandsintown {
+  color: #cc00ff;
+}
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    max-width: 100%;
 }
 
 li {

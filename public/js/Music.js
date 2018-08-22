@@ -19,17 +19,8 @@ class Music extends React.Component {
     return (
       <div className="the-core">
         <Header />
-      <div className="nav"
-      onClick={()=> this.toggleState('navVisible')}
-      >
-
-      {this.state.navVisible
-        ? <Nav
-        toggleState={this.toggleState}
-        /> : ''}
 
 
-      </div>
         <div className='info'>
           <p>words about music and stuff and things and and and and and and</p>
         </div>
