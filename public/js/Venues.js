@@ -2,11 +2,8 @@ class Venues extends React.Component {
   render() {
     return (
       <div className='eventsvenues'>
-      <ul>
-        <li className="info">Emos</li>
-        <li className="info">Come and Take It</li>
-        <li className="info">Elysium</li>
-      </ul>
+        <h2>Come and Take It Live</h2>
+        <img className='eventsvenues' src="/img/Come-And_Take-It.JPG" alt="comeandtake" />
       </div>
     )
   }

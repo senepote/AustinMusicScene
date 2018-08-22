@@ -5,8 +5,10 @@ class Music extends React.Component {
       navVisible: true,
       eventsVisible: false,
       venuesVisible: false,
+      photosVisible: false,
       event: {},
-      venue: {}
+      venue: {},
+      photos:{}
     }
     this.toggleState = this.toggleState.bind(this)
   }
@@ -23,6 +25,20 @@ class Music extends React.Component {
         <Header />
 
         <Info />
+
+        <div className="container">
+
+
+        /*
+        <button className='eventbutton'
+          onClick={()=> this.toggleState('photosVisible')}>
+          Photos
+        {this.state.photosVisible
+          ? <Photos
+          toggleState={this.toggleState}
+          event={this.state.event}
+          /> : ''}
+        </button>
 
         <button className='eventbutton'
           onClick={()=> this.toggleState('eventsVisible')}>
@@ -42,8 +58,8 @@ class Music extends React.Component {
           toggleState={this.toggleState}
           venue={this.state.venue}
           /> : ''}
-        </button>
-
+        </button> */
+        </div>
         <Footer />
       </div>
     )
