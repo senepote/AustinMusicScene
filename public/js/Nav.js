@@ -11,10 +11,10 @@ class Nav extends React.Component {
             <a href="#">More Info</a>
           </li>
           <li>
-            <a href="#">ACL</a>
+            <a href="https://www.aclfestival.com/information/">ACL</a>
           </li>
           <li>
-            <a href="#">SXSW</a>
+            <a href="https://www.sxsw.com/">SXSW</a>
           </li>
           <li>
             <a className="bandsintown" href="https://www.bandsintown.com/en/c/austin-tx">

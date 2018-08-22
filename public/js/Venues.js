@@ -3,9 +3,9 @@ class Venues extends React.Component {
     return (
       <div className='eventsvenues'>
       <ul>
-        <li>Emos</li>
-        <li>Come and Take It</li>
-        <li>Elysium</li>
+        <li className="info">Emos</li>
+        <li className="info">Come and Take It</li>
+        <li className="info">Elysium</li>
       </ul>
       </div>
     )

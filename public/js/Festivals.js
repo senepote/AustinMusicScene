@@ -3,9 +3,9 @@ class Festivals extends React.Component {
     return (
       <div className='eventsvenues'>
         <ul>
-          <li>ACL</li>
-          <li>SXSW</li>
-          <li>Any given day of the week...</li>
+          <li className="info">ACL</li>
+          <li className="info">SXSW</li>
+          <li className="info">Any given day of the week...</li>
         </ul>
       </div>
     )
