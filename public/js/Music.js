@@ -1,45 +1,56 @@
 class Music extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      navVisible: true,
+      eventsVisible: false,
+      venuesVisible: false
+    }
+    this.toggleState = this.toggleState.bind(this)
+  }
+    toggleState(st1, st2){
+    this.setState({
+      [st1]: !this.state[st1],
+      [st2]: !this.state[st2]
+    })
+  }
+
   render(){
     return (
       <div className="the-core">
         <Header />
+      <div className="nav"
+      onClick={()=> this.toggleState('navVisible')}
+      >
 
-        <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">More Info</a>
-          </li>
-          <li>
-            <a href="#">ACL</a>
-          </li>
-          <li>
-            <a href="#">SXSW</a>
-          </li>
-        </ul>
-        </nav>
+      {this.state.navVisible
+        ? <Nav
+        toggleState={this.toggleState}
+        /> : ''}
 
+
+      </div>
         <div className='info'>
           <p>words about music and stuff and things and and and and and and</p>
         </div>
 
-        <div className='eventsvenues'>
-          <ul>
-            <li>ACL</li>
-            <li>SXSW</li>
-            <li>Any given day of the week...</li>
-          </ul>
-        </div>
+        <button className='eventbutton'
+          onClick={()=> this.toggleState('eventsVisible')}>
+          Events
+        {this.state.eventsVisible
+          ? <Festivals
+          toggleState={this.toggleState}
+          /> : ''}
+        </button>
 
-        <div className='eventsvenues'>
-        <ul>
-          <li>Emos</li>
-          <li>Come and Take It</li>
-          <li>Elysium</li>
-        </ul>
-        </div>
+        <button className='venuebutton'
+          onClick={()=> this.toggleState('venuesVisible')}>
+          Venues
+        {this.state.venuesVisible
+          ? <Venues
+          toggleState={this.toggleState}
+          /> : ''}
+        </button>
 
         <Footer />
       </div>
