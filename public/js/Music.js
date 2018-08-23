@@ -6,6 +6,7 @@ class Music extends React.Component {
       eventsVisible: false,
       venuesVisible: false,
       photosVisible: false,
+      aboutVisible: false,
       event: {},
       venue: {},
       photos:{}
@@ -91,4 +92,3 @@ class Music extends React.Component {
     )
   }
 }
-//         <Info />

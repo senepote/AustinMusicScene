@@ -1,12 +1,24 @@
 class Nav extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      aboutVisible: false
+    }
+    this.toggleState = this.toggleState.bind(this)
+  }
+    toggleState(st1, st2){
+    this.setState({
+      [st1]: !this.state[st1],
+      [st2]: !this.state[st2]
+    })
+  }
+
   render() {
     return (
 
         <nav>
         <ul className="navbar">
-          <button className="about">
-            About
-          </button>
+
           <li className="nav">
             <a href="#">More Info</a>
           </li>
@@ -19,6 +31,18 @@ class Nav extends React.Component {
           <li className="nav">
             <a className="bandsintown" href="https://www.bandsintown.com/en/c/austin-tx">
               Who's coming to town</a>
+          </li>
+          <li className="nav">
+          <button className="about"
+          onClick={() => this.toggleState('aboutVisible')}
+          >
+            About
+          </button>
+
+          {this.state.aboutVisible
+            ? <About
+            toggleState={this.toggleState}
+            /> : ''}
           </li>
         </ul>
         </nav>
