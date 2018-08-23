@@ -2,7 +2,7 @@ class Music extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      navVisible: true,
+      infoVisible: true,
       eventsVisible: false,
       venuesVisible: false,
       photosVisible: false,
@@ -19,50 +19,53 @@ class Music extends React.Component {
     })
   }
 
-  render(){
+  render() {
     return (
-      <div className="the-core">
+    <div className="the-core">
         <Header />
 
-        <Info />
+      <div className="container">
+        <button
+          className='photobutton'
+          onClick={() => this.toggleState('photosVisible' ,'infoVisible')}
+          >Photos</button>
 
-        <div className="container">
-
-
-        <button className='eventbutton'
-          onClick={()=> this.toggleState('photosVisible')}>
-          Photos
         {this.state.photosVisible
           ? <Photos
           toggleState={this.toggleState}
-          event={this.state.event}
+          photos={this.state.photos}
           /> : ''}
-        </button>
+      </div>
 
+      <div className="container">
         <button className='eventbutton'
-          onClick={()=> this.toggleState('eventsVisible')}>
-          Events
+          onClick={()=> this.toggleState('eventsVisible','infoVisible')}
+          >Events</button>
         {this.state.eventsVisible
-          ?
-            <Festivals
+          ? <Festivals
             toggleState={this.toggleState}
             event={this.state.event}
             /> : ''}
-          
-        </button>
 
+
+      </div>
+
+      <div className="container">
         <button className='venuebutton'
-          onClick={()=> this.toggleState('venuesVisible')}>
-          Venues
+          onClick={()=> this.toggleState('venuesVisible','infoVisible')}
+          >Venues</button>
         {this.state.venuesVisible
           ? <Venues
           toggleState={this.toggleState}
           venue={this.state.venue}
           /> : ''}
-        </button>
-        </div>
-        <Footer />
+
       </div>
+        <Info />
+
+
+        <Footer />
+    </div>
     )
   }
 }

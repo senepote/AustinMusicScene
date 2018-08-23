@@ -145,19 +145,15 @@ img.eventsvenues{
 div.container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 div.eventsvenues {
-  /* justify-content: center; */
-  /* display: center; */
   background-color: rgb(0, 0, 102, 0.7);
   border-radius: 6px;
   margin: 10px;
   width: 400px;
   height: auto;
-  /* text-align: center; */
-
 }
 
 /* ul {
@@ -167,6 +163,15 @@ button {
   width: 80px;
   height: 40px;
 }
+
+button.photobutton {
+  background-color: rgb(0, 0, 102, 0.7);
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  margin: 6px;
+}
+
 button.eventbutton {
   background-color: rgb(0, 0, 102, 0.7);
   color: white;
