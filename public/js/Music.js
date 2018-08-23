@@ -49,7 +49,7 @@ class Music extends React.Component {
 
 
         {this.state.infoVisible
-          ? <Info
+          ? <Info2
           toggleState={this.toggleState}
           /> : ''}
 
@@ -69,7 +69,7 @@ class Music extends React.Component {
 
 
         {this.state.infoVisible
-          ? <Info
+          ? <Info3
           toggleState={this.toggleState}
           /> : ''}
 
