@@ -29,7 +29,6 @@ class Music extends React.Component {
         <div className="container">
 
 
-        /*
         <button className='eventbutton'
           onClick={()=> this.toggleState('photosVisible')}>
           Photos
@@ -44,10 +43,12 @@ class Music extends React.Component {
           onClick={()=> this.toggleState('eventsVisible')}>
           Events
         {this.state.eventsVisible
-          ? <Festivals
-          toggleState={this.toggleState}
-          event={this.state.event}
-          /> : ''}
+          ?
+            <Festivals
+            toggleState={this.toggleState}
+            event={this.state.event}
+            /> : ''}
+          
         </button>
 
         <button className='venuebutton'
@@ -58,7 +59,7 @@ class Music extends React.Component {
           toggleState={this.toggleState}
           venue={this.state.venue}
           /> : ''}
-        </button> */
+        </button>
         </div>
         <Footer />
       </div>
