@@ -2,10 +2,9 @@ class Info3 extends React.Component {
   render() {
     return (
       <div className='info'>
-        <p>Austin''s official motto is the "Live Music Capital of the World" because on any given night, one can find over one hundred venues showcasing a wide variety of free - live music performances.</p>
-        <img className="mainpage" src="/img/InThisMoment.jpg" alt="maria" />
-        <p>Austin is also famed for the SXSW and the Austin City Limits (ACL) Music Festivals which showcase an eclectic array of live musical talent from across the globe. The greatest concentration of music venues in Austin are located around 6th Street, the Warehouse District, Downtown, Central East Austin, South Congress, the Red River District, the University of Texas, South Lamar, and South Austin.</p>
-        <p>more more more more</p>
+        <p>Austin became renowned for nurturing talented musicians who did not fit the mold anywhere else, and were drawn in by the creative vibe, liberal politics, and the low cost-of-living in what was then a laid back Capital city whose largest employers were the University of Texas and State government. Austin's reputation continued to grow and become celebrated for its folk, blues, jazz, bluegrass, tejano, zydeco, new wave, punk, and indie music scenes.</p>
+        <img className="mainpage" src="/img/951391150-1024x1024.jpg" alt="maria" />
+        <a href="https://www.theguardian.com/travel/2012/oct/17/top-10-live-music-venues-austin">Top 10 Venues</a>
 
       </div>
     )

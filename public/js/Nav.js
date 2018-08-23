@@ -4,19 +4,19 @@ class Nav extends React.Component {
 
         <nav>
         <ul className="navbar">
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
+          <button className="about">
+            About
+          </button>
+          <li className="nav">
             <a href="#">More Info</a>
           </li>
-          <li>
+          <li className="nav">
             <a href="https://www.aclfestival.com/information/">ACL</a>
           </li>
-          <li>
+          <li className="nav">
             <a href="https://www.sxsw.com/">SXSW</a>
           </li>
-          <li>
+          <li className="nav">
             <a className="bandsintown" href="https://www.bandsintown.com/en/c/austin-tx">
               Who's coming to town</a>
           </li>
