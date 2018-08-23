@@ -274,9 +274,11 @@ li a:hover {
 }
 /* Html spotify and bandsintown css */
 div.widgets {
-background-color: red;
-display: flex;
-bottom: 0;
+  background-color: #8e4baf;
+  display: flex;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 div.spotify {
@@ -292,4 +294,7 @@ div.bit-widget-container {
 }
 
 
-/*  */
+/*
+bandsintown prple: #8e4baf;
+
+ */
