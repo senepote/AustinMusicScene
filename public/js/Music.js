@@ -24,48 +24,71 @@ class Music extends React.Component {
     <div className="the-core">
         <Header />
 
+
       <div className="container">
-        <button
-          className='photobutton'
-          onClick={() => this.toggleState('photosVisible' ,'infoVisible')}
-          >Photos</button>
+
+        {this.state.infoVisible
+          ? <Info
+          toggleState={this.toggleState}
+          /> : ''}
 
         {this.state.photosVisible
           ? <Photos
           toggleState={this.toggleState}
           photos={this.state.photos}
           /> : ''}
+        <div className="infobutton">
+          <button
+            className='photobutton'
+            onClick={() => this.toggleState('photosVisible' ,'infoVisible')}
+            >Photos</button>
+        </div>
       </div>
 
       <div className="container">
-        <button className='eventbutton'
-          onClick={()=> this.toggleState('eventsVisible','infoVisible')}
-          >Events</button>
+
+
+        {this.state.infoVisible
+          ? <Info
+          toggleState={this.toggleState}
+          /> : ''}
+
         {this.state.eventsVisible
           ? <Festivals
             toggleState={this.toggleState}
             event={this.state.event}
             /> : ''}
-
-
+        <div className="infobutton">
+          <button className='eventbutton'
+            onClick={()=> this.toggleState('eventsVisible','infoVisible')}
+            >Events</button>
+        </div>
       </div>
 
       <div className="container">
-        <button className='venuebutton'
-          onClick={()=> this.toggleState('venuesVisible','infoVisible')}
-          >Venues</button>
+
+
+        {this.state.infoVisible
+          ? <Info
+          toggleState={this.toggleState}
+          /> : ''}
+
+
         {this.state.venuesVisible
           ? <Venues
           toggleState={this.toggleState}
           venue={this.state.venue}
           /> : ''}
-
+          <div className="infobutton">
+          <button className='venuebutton'
+            onClick={()=> this.toggleState('venuesVisible','infoVisible')}
+            >Venues</button>
+          </div>
       </div>
-        <Info />
-
 
         <Footer />
     </div>
     )
   }
 }
+//         <Info />

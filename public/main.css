@@ -18,6 +18,7 @@ header {
   height: 180px;
   background-color: black;
   position: fixed;
+  z-index: 1;
   top: 0;
   padding: 0;
   left: 0;
@@ -93,19 +94,30 @@ div.the-core {
   align-items: center;
   justify-content: center;
 } */
+div.container {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
 
 div.info {
   margin-left: 20px;
+  margin-right: 20px;
   /* display: flex; */
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   width: auto;
-  background-color: rgb(25, 0, 84, 0.7);
+  background-color: rgb(0, 92, 153, 0.85);
+  /* background-color: rgb(25, 0, 84, 0.7); */
   text-align: center;
   border-radius: 8px;
   padding: 30px;
-
 }
+div.infobutton {
+  justify-content: flex-end;
+  display: flex;
+}
+
 footer {
   height: 20px;
   background-color: black;
@@ -133,6 +145,7 @@ p {
   text-align: center;
   color: white;
   font-family: 'Kalam', cursive;
+  font-size: 20px;
 }
 
 img {
@@ -145,7 +158,8 @@ img.eventsvenues{
 div.container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  text-align: center;
 }
 
 div.eventsvenues {
