@@ -147,7 +147,10 @@ p {
   font-family: 'Kalam', cursive;
   font-size: 20px;
 }
-
+img.mainpage {
+  width: auto;
+  height: 400px;
+}
 img {
   padding: 20px;
 }
