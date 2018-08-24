@@ -140,6 +140,13 @@ h1.eventtitle {
   color: #b366ff;
   font-size: 25px;
 }
+h2.band-names {
+  text-align: center;
+  font-size: 30px;
+  /* font-weight: bold; */
+  font-family: 'Oswald', sans-serif;
+  margin: 14px;
+}
 h3, h2, h1, li {
   color: white;
   list-style-type: none;
@@ -275,14 +282,27 @@ li a:hover {
 /* Html spotify and bandsintown css */
 div.widgets {
   background-color: #8e4baf;
-  display: flex;
+
   bottom: 0;
   padding: 10px;
   border-radius: 6px;
+
+}
+div.spotify{
+  align-items: center;
+  text-align: center;
+  display: block;
 }
 
-div.spotify {
+div.spotify-follow {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
 
+}
+
+div.spotify-listen {
+  padding: 10px;
 }
 
 div.bandsintown {
@@ -290,7 +310,7 @@ div.bandsintown {
 }
 
 div.bit-widget-container {
-
+  /* display: inline-block; */
 }
 
 
