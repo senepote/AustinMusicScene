@@ -11,7 +11,10 @@ class Venues extends React.Component {
           <img className='eventsvenues' src="/img/Moody-Theatre.jpg" alt="moody" />
         <h2>Swan Dive</h2>
           <img className='eventsvenues' src="/img/swan-dive.jpeg" alt="swandive" />
-
+        <h2>Elysium</h2>
+          <img className='eventsvenues' src="/img/elysium.jpeg" alt="elysium" />
+        <h2>Empire Control Room</h2>
+          <img className='eventsvenues' src="/img/Empire-Control-Room.jpg" alt="empire" />
       </div>
     )
   }

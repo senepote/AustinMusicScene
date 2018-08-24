@@ -178,12 +178,17 @@ div.container {
 }
 
 div.eventsvenues {
+  padding-top: 5px;
   background-color: rgb(0, 0, 102, 0.7);
   border-radius: 6px;
   margin: 10px;
   /* width: 600px; */
   width: auto;
   height: auto;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 div.aboutpage {
@@ -245,10 +250,15 @@ button.venuebutton:focus {
 
 button.about {
   font-family: 'Kalam', cursive;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #333;
   color: white;
   border: none;
+  padding-top: 6px;
+}
+
+li.nav2 {
+  padding-top: 5px;
 }
 
 a.bandsintown {

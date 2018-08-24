@@ -32,7 +32,7 @@ class Nav extends React.Component {
             <a className="bandsintown" href="https://www.bandsintown.com/en/c/austin-tx">
               Who's coming to town</a>
           </li>
-          <li className="nav">
+          <li className="nav2">
           <button className="about"
           onClick={() => this.toggleState('aboutVisible')}
           >
