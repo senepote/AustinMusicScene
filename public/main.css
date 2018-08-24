@@ -156,7 +156,7 @@ h3, h2, h1, li {
 p {
   text-align: center;
   color: white;
-  font-family: 'Kalam', cursive;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
 }
 img.mainpage {
@@ -196,31 +196,31 @@ div.aboutpage {
   padding-right: 35px;
 } */
 button {
-  width: 80px;
+  width: 90px;
   height: 40px;
 }
 
 button.photobutton {
-  background-color: rgb(0, 0, 102, 0.7);
+  background-color: #0099cc;
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
   margin: 6px;
 }
 
 button.eventbutton {
-  background-color: rgb(0, 0, 102, 0.7);
+  background-color: #0033cc;
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
   margin: 6px;
 
 }
 button.venuebutton {
-  background-color: rgb(102, 0, 204);
+  background-color: #6600cc;
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 21px;
   margin: 6px;
 }
 button.eventbutton:focus {
@@ -254,6 +254,13 @@ button.about {
 a.bandsintown {
   color: #cc00ff;
 }
+
+a.venue-link {
+  color: #dec9e8;
+  padding: 7px;
+  border: 1px solid #cc00ff;
+}
+
 ul.navbar {
     list-style-type: none;
     margin: 0;
